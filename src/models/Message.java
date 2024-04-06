@@ -32,7 +32,7 @@ public class Message {
     private String title;
 
     @Column(name="content",length=255,nullable=false)
-    private String conetent;
+    private String content;
 
     @Column(name="created_at",nullable=false)
     private Timestamp created_at;
@@ -56,12 +56,12 @@ public class Message {
         this.title = title;
     }
 
-    public String getConetent() {
-        return conetent;
+    public String getContent() {
+        return content;
     }
 
-    public void setConetent(String conetent) {
-        this.conetent = conetent;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public Timestamp getCreated_at() {
